@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "langchain-playground"
+version = "0.1.0"
+description = ""
+authors = ["Kehao Chen <kehao.chen@happyhacking.ninja>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.2"
+uvicorn = "^0.27.1"
+langchain = "^0.1.7"
+pydantic-settings = "^2.2.0"
+langchain-openai = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
