@@ -1,10 +1,8 @@
 from fastapi import FastAPI
 
 from .dependencies import llm
-from .routers import demo
 
 app = FastAPI()
-app.include_router(demo.router)
 
 
 @app.get("/")
