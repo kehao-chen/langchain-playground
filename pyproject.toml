@@ -1,3 +1,7 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
 name = "langchain-playground"
 version = "0.1.0"
@@ -7,15 +11,15 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.109.2"
-uvicorn = "^0.27.1"
+beautifulsoup4 = "^4.12.3"
+faiss-cpu = "^1.8.0"
 langchain = "^0.1.7"
-pydantic-settings = "^2.2.0"
 langchain-openai = "^0.0.6"
+langserve = {extras = ["all"], version = "^0.0.46"}
+pydantic-settings = "^2.2.1"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.pyright]
+reportCallIssue = false
 
 [tool.ruff.lint]
 select = [
